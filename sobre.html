@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="widht=device-widht, initial-scale=1.0" />
     <title>Menu Pizzaria</title>
+
     <style>
       * {
         margin: 0 auto;
@@ -46,32 +47,63 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        img {
-          width: 100%;
-          height: 150px;
-          object-fit: cover;
-        }
       }
 
       .descricao {
         background-color: white;
         width: 70%;
-        padding: 15px;
-        align-items: center;
-        justify-content: center;
+        padding: 20px;
+        align-items: flex-start;
+        justify-content: flex-start;
         height: 450px;
         display: flex;
         flex-direction: column;
+        border-radius: 20px;
+        font-family: Roboto;
+        font-weight: bold;
       }
+
+      .descricao img {
+        width: 100%;
+        height: 235px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+
+      .icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .icons a {
+        text-decoration: none;
+      }
+
+      .icons i {
+        font-size: 30px;
+        color: #555;
+        transition: color 0.3s, transform 0.3s;
+      }
+
+      .icons i:hover {
+        transform: scale(1.2);
+      }
+
+
     </style>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
   </head>
 
   <body>
     <nav id="menu-h">
       <ul>
         <li>
-          <a href="home.html">Home</a>
-        </li>
+          <a href="home.html">Home</a></li>
 
         <li><a href="sobre.html">Sobre</a></li>
 
@@ -87,7 +119,19 @@
         massa artesanal e assadas em forno a lenha, proporcionando uma
         experiência única a cada mordida.<br />
         Um ambiente acolhedor para compartilhar momentos especiais com a família
-        e amigos.
+        e amigos. 
+        <div class="icons">
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fab fa-instagram instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fab fa-twitter twitter"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+              <i class="fab fa-tiktok tiktok"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
