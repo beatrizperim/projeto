@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0" />
+    <title>Menu Pizzaria</title>
+    <style>
+      * {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      #menu-h {
+        background-color: antiquewhite;
+        padding: 10px 0;
+      }
+
+      #menu-h ul {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 960px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      #menu-h li {
+      }
+
+      #menu-h a {
+        color: black;
+        padding: 10px 15px;
+        display: block;
+        text-decoration: none;
+        transition: background 0.4s;
+      }
+
+      #menu-h a:hover {
+        background-color: pink;
+      }
+
+      .container {
+        background-color: brown;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+          height: 150px;
+          object-fit: cover;
+        }
+      }
+
+      .descricao {
+        background-color: white;
+        width: 70%;
+        padding: 15px;
+        align-items: center;
+        justify-content: center;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav id="menu-h">
+      <ul>
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+
+        <li><a href="sobre.html">Sobre</a></li>
+
+        <li><a href="carrinho.html">Carrinho</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="descricao">
+        <img src="../assets/fotopromocional.jpg" alt="foto promocional pizza" />
+        Na Pizza Hut, a tradição italiana encontra o sabor inigualável.<br />
+        Nossas pizzas são preparadas com ingredientes frescos e selecionados,
+        massa artesanal e assadas em forno a lenha, proporcionando uma
+        experiência única a cada mordida.<br />
+        Um ambiente acolhedor para compartilhar momentos especiais com a família
+        e amigos.
+      </div>
+    </div>
+  </body>
+</html>
