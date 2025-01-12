@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0" />
+    <title>Menu Pizzaria</title>
+
+    <style>
+      * {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      #menu-h {
+        background-color: antiquewhite;
+        padding: 10px 0;
+      }
+
+      #menu-h ul {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 960px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      #menu-h li {
+      }
+
+      #menu-h a {
+        color: black;
+        padding: 10px 15px;
+        display: block;
+        text-decoration: none;
+        transition: background 0.4s;
+      }
+
+      #menu-h a:hover {
+        background-color: pink;
+      }
+
+      .container {
+        background-color: brown;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .descricao {
+        background-color: white;
+        width: 70%;
+        padding: 20px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        font-family: Roboto;
+        font-weight: bold;
+      }
+
+      .descricao img {
+        width: 100%;
+        height: 235px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+
+      .icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .icons a {
+        text-decoration: none;
+      }
+
+      .icons i {
+        font-size: 30px;
+        color: #555;
+        transition: color 0.3s, transform 0.3s;
+      }
+
+      .icons i:hover {
+        transform: scale(1.2);
+      }
+
+
+    </style>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <nav id="menu-h">
+      <ul>
+        <li>
+          <a href="home.html">Home</a></li>
+
+        <li><a href="sobre.html">Sobre</a></li>
+
+        <li><a href="carrinho.html">Carrinho</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="descricao">
+        <img src="../assets/fotopromocional.jpg" alt="foto promocional pizza" />
+        Na Pizza Hut, a tradição italiana encontra o sabor inigualável.<br />
+        Nossas pizzas são preparadas com ingredientes frescos e selecionados,
+        massa artesanal e assadas em forno a lenha, proporcionando uma
+        experiência única a cada mordida.<br />
+        Um ambiente acolhedor para compartilhar momentos especiais com a família
+        e amigos. 
+        <div class="icons">
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fab fa-instagram instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fab fa-twitter twitter"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+              <i class="fab fa-tiktok tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
