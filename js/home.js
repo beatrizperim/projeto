@@ -70,7 +70,11 @@ function createCards() {
       descriptionElement.textContent = flavor.description;
     }
     if (priceElement) {
-      priceElement.textContent = `R$ ${flavor.price.toFixed(2)}`;
+      if (flavor.price < 70) {
+        priceElement.textContent = "PROMOÇÃO: R$" + flavor.price;
+      } else {
+        priceElement.textContent = `R$ ${flavor.price.toFixed(2)}`;
+      }
     }
     if (imageElement) {
       imageElement.src = flavor.image;
@@ -80,13 +84,3 @@ function createCards() {
 }
 
 createCards();
-
-// Código para os botões:
-const addButtons = document.querySelectorAll(".flavor-box button");
-
-addButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const price = button.parentNode.dataset.preco;
-    alert(`Pizza adicionada ao carrinho! Preço: R$${price}`);
-  });
-});
