@@ -2,9 +2,10 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="widht=device-widht, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu Pizzaria</title>
     <style>
+      /* Seus estilos CSS */
       * {
         margin: 0 auto;
         padding: 0;
@@ -25,9 +26,6 @@
         justify-content: space-around;
       }
 
-      #menu-h li {
-      }
-
       #menu-h a {
         color: black;
         padding: 10px 15px;
@@ -42,26 +40,29 @@
 
       .container {
         background-color: brown;
-        height: 100vh;
+        height: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: er;
+        justify-content: flex-start;
         padding: 20px;
+        flex-direction: column;
       }
 
       .flavor-box {
         width: 250px;
         height: auto;
         display: flex;
-        flex-direction: column;
         align-items: center;
         padding: 10px;
         text-align: center;
+        background-color: white;
+        border-radius: 10px;
+        margin: 10px;
+        flex-direction: column;
       }
 
       .flavor-box img {
-        max-width: 100%;
-        height: auto;
+        height: 100px;
         margin-bottom: 10px;
       }
 
@@ -83,57 +84,64 @@
         border-radius: 5px;
       }
 
-      .flavor-box button: :hover {
-         background-color: red;
+      .flavor-box button:hover {
+        background-color: red;
       }
-
     </style>
   </head>
-
   <body>
     <nav id="menu-h">
       <ul>
         <li><a href="home.html">Home</a></li>
-
         <li><a href="sobre.html">Sobre</a></li>
-
         <li><a href="carrinho.html">Carrinho</a></li>
       </ul>
     </nav>
 
     <div class="container">
       <div class="flavor-box">
-        <img src="" alt="Pizza de Mussarela">
-        <h3>Mussarela</h3>
-        <p>Mussarela com molho de tomate e orégano</p>
-        <p>R$75,00</p>
-        <button>Adicionar ao carrinho</button>
-      </div> 
-      <div class="flavor-box">
-        <img src="" alt="Pizza de Calabresa com Catupiry">
-        <h3>Calabresa com Catupiry</h3>
-        <p>Calabresa com cebola e catupiry</p>
-        <p>R$79,00</p>
-        <button>Adicionar ao carrinho</button>
-      </div> 
-      <div class="flavor-box">
-        <img src="" alt="Pizza de Marguerita">
-        <h3>Marguerita</h3>
-        <p>Queijo, Manjericão e molho de tomate</p>
-        <p>R$75,00</p>
-        <button>Adicionar ao carrinho</button>
+        <img src="" alt="Pizza de Mussarela" />
+        <div class="flavor-box-description">
+          <h3 id="titulo-mussarela">Mussarela</h3>
+          <p id="descricao-mussarela">
+            Mussarela com molho de tomate e orégano
+          </p>
+          <p id="preco-mussarela">R$75,00</p>
+          <button data-preco="75.00">Adicionar ao carrinho</button>
+        </div>
       </div>
       <div class="flavor-box">
-        <img src="" alt="Pizza de Frango com Catupiry">
-        <h3>Frango com Catupiry</h3>
-        <p>Peito de frango desfiado com catupiry e orégano.</p>
-        <p>R$79,00</p>
-        <button>Adicione ao carrinho</button>
+        <img src="" alt="Pizza de Calabresa com Catupiry" />
+        <div class="flavor-box-description">
+          <h3 id="titulo-calabresa-com-catupiry">Calabresa com Catupiry</h3>
+          <p id="descricao-calabresa-com-catupiry">
+            Calabresa com cebola e catupiry
+          </p>
+          <p id="preco-calabresa-com-catupiry">R$79,00</p>
+          <button data-preco="79.00">Adicionar ao carrinho</button>
+        </div>
+      </div>
+      <div class="flavor-box">
+        <img src="" alt="Pizza de Marguerita" />
+        <div class="flavor-box-description">
+          <h3 id="titulo-marguerita">Marguerita</h3>
+          <p id="descricao-marguerita">Queijo, Manjericão e molho de tomate</p>
+          <p id="preco-marguerita">R$75,00</p>
+          <button data-preco="75.00">Adicionar ao carrinho</button>
+        </div>
+      </div>
+      <div class="flavor-box">
+        <img src="" alt="Pizza de Frango com Catupiry" />
+        <div class="flavor-box-description">
+          <h3 id="titulo-frango-com-catupiry">Frango com Catupiry</h3>
+          <p id="descricao-frango-com-catupiry">
+            Peito de frango desfiado com catupiry e orégano.
+          </p>
+          <p id="preco-frango-com-catupiry">R$79,00</p>
+          <button data-preco="79.00">Adicionar ao carrinho</button>
+        </div>
       </div>
     </div>
-
-    </div>
-
-    <script></script>
+    <script src="js/home.js"></script>
   </body>
 </html>
